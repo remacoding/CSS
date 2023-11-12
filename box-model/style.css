@@ -53,7 +53,7 @@ body {
     width: 400px;
     /* auto value in width */
     width: 0 auto;
-    height: ;
+    height: 800px;
     overflow: scroll;
   }
   
@@ -139,4 +139,3 @@ body {
   .donate {
     visibility: hidden;
   }
-

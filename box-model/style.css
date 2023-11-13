@@ -1,7 +1,9 @@
-/* resetting defaults. Add always at the start of a new external css style file */
 * {
-    margin: 0;
-    padding: 0;
+  /* resetting defaults. Add always at the start of a new external css style file */
+  margin: 0;
+  padding: 0;
+  /*  border-boxavoids the dimensional issues that exist in the former box model you learned about. */
+    box-sizing: border-box;
 }
 
 body {

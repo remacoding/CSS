@@ -1,0 +1,202 @@
+/* fonts usage with @font-face */
+@font-face {
+    font-family: 'GlegooBanner';
+    src: url('../fonts/Glegoo-Regular.woff2') format('woff2'),
+         url('../fonts/Glegoo-Regular.woff') format('woff'),
+         url('../fonts/Glegoo-Regular.ttf') format('truetype');
+  }
+
+/* Josh Comeau css reset */
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+/* Universal Styles */
+html {
+  font-size: 16px;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+h1 {
+  padding: 20px;
+  color: white;
+  font-size: 28px;
+  text-align: center;
+  /* changing font-family to georgia */
+  font-family: Georgia;
+  /* changing text to uppercase */
+  text-transform: uppercase;
+  /* changing letter spacing to 0.3rem */
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  padding: 40px 20px 0 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  /* text alignment to justify */
+  text-align: justify;
+  /* font family to space mono with fallback fonts as serif and times new roman */
+  font-family: "Space Mono", serif, "Times New Roman";
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #fff;
+  font-size: 14px;
+  /* changing font-weight to 900 */
+  font-weight: 900;
+  /* font family to glegoobanner using @font-face */
+  font-family: 'GlegooBanner', serif;
+}
+
+.header li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.header a {
+  color: #4a4a4a;
+}
+
+a.home {
+  color: #4d00ff;
+}
+
+/* Banner Section */
+.banner {
+  margin-top: 74px;
+  padding: 40px 0 100px 0;
+  background-color: #4d00ff;
+}
+
+.banner p {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  color: #ffffff;
+  /* adding lighter font weight */
+  font-weight: lighter;
+  /* adding word spacing to 0.25rem */
+  word-spacing: 0.25rem;
+  /* line height to 1.5 */
+  line-height: 1.5;
+}
+
+/* Editorial Sections */
+.editorial {
+  padding-bottom: 40px;
+  color: #717171;
+  /* changing font-family to trebuchet ms with fall back 
+  fonts to times new roman and serif */
+  font-family: "Trebuchet MS", "Times New Roman", serif;
+}
+
+/* Font Card Sections */
+.font-card {
+  padding: 10px 0 40px 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.font-card .creator {
+  padding: 10px 20px;
+  font-size: 16px;
+  /* changing font-style to italic */
+  font-style: italic;
+}
+
+.sample {
+  display: inline-block;
+  padding: 5px 40px;
+}
+
+.sample .text {
+  color: #4d00ff;
+  font-size: 100px;
+}
+
+.garamond {
+  font-family: Garamond;
+}
+
+.helvetica {
+  font-family: Helvetica;
+}
+
+.space {
+}
+
+.bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: normal;
+}
+
+.italic {
+  font-weight: normal;
+  font-style: italic;
+}

@@ -1,32 +1,44 @@
 body {
-    margin: 0;
-    border: 0;
-    font-family: 'Roboto Mono', monospace;
-  }
-  
-  h1 {
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  h2 {
-    font-size: 16px;
-    text-align: center;
-  }
-  
-  .container {
-    background-color: whitesmoke;
-  }
-  
-  .box {
-    background-color: dodgerblue;
-    height: 100px;
-    width: 100px;
-    border: 1px solid lightgrey;
-  }
-  
-  #flex {
-    /* displaying flex on the div with #flex id */
+  margin: 0;
+  border: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+h1 {
+  font-size: 18px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 16px;
+  text-align: center;
+}
+
+.container {
+  background-color: whitesmoke;
+  /* displaying the div with class container as an inline flex */
+}
+
+.box,
+.inline-box {
+  background-color: dodgerblue;
+  height: 100px;
+  width: 100px;
+  border: 1px solid lightgrey;
+}
+
+#flex {
+  /* displaying flex on the div with #flex id */
   display: flex;
-  }
-  
+}
+
+.inline-flex {
+  display: inline-flex;
+  /* justify content example */
+  justify-content: flex-start;
+  /* align items example, can have different values
+  and it displays the ites cross axis */
+  width: 250px;
+  height: 200px;
+}
+

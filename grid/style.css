@@ -1,0 +1,19 @@
+.grid {
+  border: 2px blue solid;
+  width: 400px;
+  height: 500px;
+  /* displaying grid */
+  display: grid;
+  /* 1st column is 100px, 2nd column 50% of the parent containers width
+    and 3rd column is 200px */
+  grid-template-columns: 100px 50% 200px;
+  /* same logic in the space allocation as in the grid-template-columns */
+  grid-template-rows: 40% 50% 50px;
+}
+
+.box {
+  background-color: beige;
+  color: black;
+  border-radius: 5px;
+  border: 2px dodgerblue solid;
+}
